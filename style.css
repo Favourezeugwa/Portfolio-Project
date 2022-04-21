@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbar img {
+  width: 111px;
+  height: 74px;
+}
+
+.toolbar button {
+  left: 284px;
+  top: 19px;
+  margin: 20px;
+}
+
+.toolbar button a i {
+  height: 10px;
+  width: 40px;
+  border: none;
+}
