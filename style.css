@@ -1,32 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: #fff;
+  margin: 0;
 }
 
-.toolbar {
+#toolbar {
   display: flex;
   justify-content: space-between;
 }
 
-.toolbar img {
+#logoimage {
   width: 111px;
   height: 74px;
 }
 
-.toolbar button {
-  left: 284px;
-  top: 19px;
-  margin: 20px;
+#menuimage {
+  width: 20px;
+  height: 14px;
+  padding-top: 19px;
+  padding-right: 16px;
 }
 
-.toolbar button a i {
-  height: 10px;
-  width: 40px;
-  border: none;
+.headline {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 30px 16px 32px 16px;
+}
+
+.name {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 100%;
+  font-weight: 400;
+  color: #1a2236;
+}
+
+.bio {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+.profilelin {
+  border: 1px solid #1a2236;
+  padding: 12px 60px 11.53px 60px;
+  background-color: #1a2236;
+  margin-top: 20px;
+}
+
+.toprofile {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+#Geometry2 {
+  width: 320px;
+  height: 160px;
+  padding-bottom: 40px;
 }
