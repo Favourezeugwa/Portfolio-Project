@@ -71,7 +71,11 @@ body {
 }
 
 #Geometry2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 320px;
   height: 160px;
   padding-bottom: 40px;
+  margin: auto;
 }

@@ -10,7 +10,7 @@ This is my first portfolio project, in a mobile version form. I hope you like wh
 
 ## Authors
 
-**Author1**
+**Favour Amarachi Ezeugwa**
 
 - GitHub: [@githubhandle](https://github.com/Favourezeugwa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/favour-amarachi-ezeugwa-a5bb31149/)
