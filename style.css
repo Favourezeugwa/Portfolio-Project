@@ -78,4 +78,202 @@ body {
   height: 160px;
   padding-bottom: 40px;
   margin: auto;
+  background: url("images/image_geometry_2.svg") no-repeat;
+}
+
+#projects-container {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.project-heading {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+  padding-left: 16px;
+  padding-bottom: 32px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  background: #1a2236;
+}
+
+.project-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  background: #1a2236;
+}
+
+.project-info-name {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 80%;
+  padding: 20px 36px 16px 20px;
+  color: #fff;
+}
+
+.project-languages {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.project-languages > li {
+  background: #98dede;
+  padding: 6px 10px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10.3334px;
+  line-height: 80%;
+}
+
+.button-with-arrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  background: #1a2236;
+  border: 1px solid #fff;
+  width: fit-content;
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+}
+
+.btn:focus {
+  background: #fff;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+}
+
+.button-with-arrow > img {
+  padding-top: 3.95px;
+  padding-right: 1.43px;
+  padding-bottom: 4.7px;
+  padding-left: 2px;
+}
+
+#about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-heading {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+  padding-top: 56px;
+  padding-left: 16px;
+}
+
+.content {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1a2236;
+  padding: 20px 16px 32px 16px;
+}
+
+.download-button {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  gap: 15px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 75px;
+  background: #1a2236;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.download-button > img {
+  padding-right: 79px;
+}
+
+.blue {
+  background-color: #1c528a;
+}
+
+.red {
+  background-color: #e2505c;
+}
+
+.orange {
+  background-color: #febf52;
+}
+
+.section-about {
+  color: #fff;
+  margin-top: 24px;
+  margin-bottom: 34px;
+}
+
+.section-about .languages {
+  padding: 50px;
+  margin: 16px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.section-about h1 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.section-about .container-list {
+  list-style: none;
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+}
+
+.section-about .about-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
 }
