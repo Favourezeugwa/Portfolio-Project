@@ -24,13 +24,13 @@ This is my first portfolio project, in a mobile version form. Which focuses on m
 
 ### Setup
 
-Linters
-Git bash (optional: vscode gitbash terminal)
+- Linters
+- Git bash (optional: vscode gitbash terminal)
 
 ### Install
 
-Live server on VScode
-node.js
+- Live server on VScode
+- node.js
 
 ## Author
 
