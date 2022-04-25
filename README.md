@@ -46,6 +46,12 @@ This is my first portfolio project, in a mobile version form. Which focuses on m
 - Twitter: [@Abdelrahman Mohamed](https://twitter.com/abodyalex1)
 - LinkedIn: [Abdelruhman Mihamed](https://www.linkedin.com/in/abdelruhman-mihamed-a42667179/)
 
+**Winnie**
+
+- GitHub: [@edubew](https://github.com/edubew)
+- Twitter: [@edube_winne](https://twitter.com/edube_winne)
+- LinkedIn: [Winfred Edube](https://www.linkedin.com/in/winfred-edube-9820a422a/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

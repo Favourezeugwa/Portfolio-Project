@@ -308,3 +308,48 @@ input {
   padding-top: 4px;
   padding-bottom: 33px;
 }
+
+textarea {
+  width: 288px;
+  height: 112px;
+  left: 16px;
+  top: 4520px;
+  background: #fff;
+  border: 1px solid #DFDFE0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-left: 18px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 16px;
+  padding-top: 4px;
+}
+#button {
+  margin-left: 18px;
+  width: 288px;
+}
+#footer {
+  margin-top: 64px;
+  background: #1A2236;
+}
+.resume {
+  display: flex;
+  gap: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #92DCDC;
+  padding-top: 32px;
+  padding-left: 16px;
+}
+.social-links {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin-top: 30.5px;
+  padding-bottom: 30.5px;
+}
+
+
