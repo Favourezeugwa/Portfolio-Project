@@ -15,7 +15,7 @@ body {
   justify-content: space-between;
 }
 
-#logoimage {
+.logoimage {
   width: 111px;
   height: 74px;
 }
