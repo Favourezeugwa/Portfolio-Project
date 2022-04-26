@@ -282,15 +282,18 @@ body {
 #contact-form-section {
   background: #f9f9fa;
 }
+
 .contact {
   margin-top: 31.98px;
   margin-left: 18px;
   margin-bottom: 20px;
 }
+
 .form-text {
   margin-left: 18px;
   margin-bottom: 31px;
 }
+
 input {
   width: 288px;
   height: 52px;
@@ -315,7 +318,7 @@ textarea {
   left: 16px;
   top: 4520px;
   background: #fff;
-  border: 1px solid #DFDFE0;
+  border: 1px solid #dfdfe0;
   box-sizing: border-box;
   border-radius: 4px;
   margin-left: 18px;
@@ -324,26 +327,30 @@ textarea {
   padding-left: 16px;
   padding-top: 4px;
 }
+
 #button {
   margin-left: 18px;
   width: 288px;
 }
+
 #footer {
   margin-top: 64px;
-  background: #1A2236;
+  background: #1a2236;
 }
+
 .resume {
   display: flex;
   gap: 16px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #92DCDC;
+  color: #92dcdc;
   padding-top: 32px;
   padding-left: 16px;
 }
+
 .social-links {
   display: flex;
   list-style-type: none;
@@ -351,5 +358,3 @@ textarea {
   margin-top: 30.5px;
   padding-bottom: 30.5px;
 }
-
-
