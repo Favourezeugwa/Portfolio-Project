@@ -36,8 +36,8 @@ This is my first portfolio project, in a mobile version form. Which focuses on m
 
 👤 **Favour Amarachi Ezeugwa**
 
-- GitHub: [@githubhandle](https://github.com/Favourezeugwa)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/favour-amarachi-ezeugwa-a5bb31149/)
+- GitHub: [@Favourezeugwa](https://github.com/Favourezeugwa)
+- LinkedIn: [Favour Amarachi Ezeugwa](https://www.linkedin.com/in/favour-amarachi-ezeugwa-a5bb31149/)
 
 ## 🤝 Contributing
 
