@@ -106,6 +106,7 @@ body {
 .project-image {
   width: 100%;
   object-fit: contain;
+  margin-top: -1%;
 }
 
 .project-info {
