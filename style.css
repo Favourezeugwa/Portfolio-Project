@@ -278,3 +278,33 @@ body {
   width: 100px;
   height: 100px;
 }
+
+#contact-form-section {
+  background: #f9f9fa;
+}
+.contact {
+  margin-top: 31.98px;
+  margin-left: 18px;
+  margin-bottom: 20px;
+}
+.form-text {
+  margin-left: 18px;
+  margin-bottom: 31px;
+}
+input {
+  width: 288px;
+  height: 52px;
+  left: 16px;
+  top: 4400px;
+  background: #fff;
+  border: 1px solid #dfdfe0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-left: 18px;
+  margin-bottom: 8px;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 16px;
+  padding-top: 4px;
+  padding-bottom: 33px;
+}
