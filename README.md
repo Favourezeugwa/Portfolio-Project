@@ -36,8 +36,22 @@ This is my first portfolio project, in a mobile version form. Which focuses on m
 
 👤 **Favour Amarachi Ezeugwa**
 
-- GitHub: [@githubhandle](https://github.com/Favourezeugwa)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/favour-amarachi-ezeugwa-a5bb31149/)
+- GitHub: [@Favourezeugwa](https://github.com/Favourezeugwa)
+- LinkedIn: [Favour Amarachi Ezeugwa](https://www.linkedin.com/in/favour-amarachi-ezeugwa-a5bb31149/)
+
+## Collaborators
+
+**Abdo**
+
+- GitHub: [@Abdo9826](https://github.com/Abdo9826)
+- Twitter: [@Abdelrahman Mohamed](https://twitter.com/abodyalex1)
+- LinkedIn: [Abdelruhman Mihamed](https://www.linkedin.com/in/abdelruhman-mihamed-a42667179/)
+
+**Winnie**
+
+- GitHub: [@edubew](https://github.com/edubew)
+- Twitter: [@edube_winne](https://twitter.com/edube_winne)
+- LinkedIn: [Winfred Edube](https://www.linkedin.com/in/winfred-edube-9820a422a/)
 
 ## 🤝 Contributing
 

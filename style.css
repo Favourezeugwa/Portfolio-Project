@@ -15,7 +15,7 @@ body {
   justify-content: space-between;
 }
 
-#logoimage {
+.logoimage {
   width: 111px;
   height: 74px;
 }
@@ -58,9 +58,6 @@ body {
   padding: 12px 60px 11.53px 60px;
   background-color: #1a2236;
   margin-top: 20px;
-}
-
-.toprofile {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -277,4 +274,85 @@ body {
   right: 0;
   width: 100px;
   height: 100px;
+}
+
+#contact-form-section {
+  background: #f9f9fa;
+}
+
+.contact {
+  display: flex;
+  margin-top: 31.98px;
+  margin-left: 18px;
+  margin-bottom: 20px;
+}
+
+.form-text {
+  margin-left: 18px;
+  margin-bottom: 31px;
+}
+
+input {
+  width: 288px;
+  height: 52px;
+  left: 16px;
+  top: 4400px;
+  background: #fff;
+  border: 1px solid #dfdfe0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-left: 18px;
+  margin-bottom: 8px;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 16px;
+  padding-top: 4px;
+  padding-bottom: 33px;
+}
+
+textarea {
+  width: 288px;
+  height: 112px;
+  left: 16px;
+  top: 4520px;
+  background: #fff;
+  border: 1px solid #dfdfe0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-left: 18px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 16px;
+  padding-top: 4px;
+}
+
+#button {
+  margin-left: 18px;
+  width: 288px;
+}
+
+#footer {
+  margin-top: 64px;
+  background: #1a2236;
+}
+
+.resume {
+  display: flex;
+  gap: 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #92dcdc;
+  padding-top: 32px;
+  padding-left: 16px;
+}
+
+.social-links {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin-top: 30.5px;
+  padding-bottom: 30.5px;
 }
