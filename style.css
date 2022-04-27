@@ -58,9 +58,6 @@ body {
   padding: 12px 60px 11.53px 60px;
   background-color: #1a2236;
   margin-top: 20px;
-}
-
-.toprofile {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -284,6 +281,7 @@ body {
 }
 
 .contact {
+  display: flex;
   margin-top: 31.98px;
   margin-left: 18px;
   margin-bottom: 20px;

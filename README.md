@@ -39,9 +39,10 @@ This is my first portfolio project, in a mobile version form. Which focuses on m
 - GitHub: [@Favourezeugwa](https://github.com/Favourezeugwa)
 - LinkedIn: [Favour Amarachi Ezeugwa](https://www.linkedin.com/in/favour-amarachi-ezeugwa-a5bb31149/)
 
-## Collaborators 
- 
- **Abdo**
+## Collaborators
+
+**Abdo**
+
 - GitHub: [@Abdo9826](https://github.com/Abdo9826)
 - Twitter: [@Abdelrahman Mohamed](https://twitter.com/abodyalex1)
 - LinkedIn: [Abdelruhman Mihamed](https://www.linkedin.com/in/abdelruhman-mihamed-a42667179/)
