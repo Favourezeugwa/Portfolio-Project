@@ -1,10 +1,13 @@
 ## Portfolio setup and mobile version skeleton.
 
-This is my first portfolio project, in a mobile version form. Which focuses on my projects, achievements, technical and professional skills, frameworks and programming languages. I hope you like what you see.
+This is my first portfolio project, that is responsive to all screensizes. Mobile version, tablet and desktop.
+
+![Screenshot](desktop-version-screenshot.PNG)
 
 ## Built With
 
 - HTML and CSS
+  -Media query
 - Github and Git
 - Linters (HTML & CSS)
 
@@ -41,13 +44,13 @@ This is my first portfolio project, in a mobile version form. Which focuses on m
 
 ## Collaborators
 
-**Abdo**
+👤 **Abdo**
 
 - GitHub: [@Abdo9826](https://github.com/Abdo9826)
 - Twitter: [@Abdelrahman Mohamed](https://twitter.com/abodyalex1)
 - LinkedIn: [Abdelruhman Mihamed](https://www.linkedin.com/in/abdelruhman-mihamed-a42667179/)
 
-**Winnie**
+👤 **Winnie**
 
 - GitHub: [@edubew](https://github.com/edubew)
 - Twitter: [@edube_winne](https://twitter.com/edube_winne)

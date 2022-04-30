@@ -3,6 +3,10 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -21,10 +25,8 @@ body {
 }
 
 #menuimage {
-  width: 20px;
-  height: 14px;
-  padding-top: 19px;
-  padding-right: 16px;
+  height: 15px;
+  margin: 20px;
 }
 
 .headline {
@@ -51,6 +53,7 @@ body {
   line-height: 21px;
   letter-spacing: -0.01em;
   color: #1a2236;
+  padding-top: 20px;
 }
 
 .profilelin {
@@ -97,7 +100,6 @@ body {
 .project-container {
   display: flex;
   flex-direction: column;
-  background: #1a2236;
 }
 
 .project-image {
@@ -278,6 +280,8 @@ body {
 
 #contact-form-section {
   background: #f9f9fa;
+  padding-left: 18px;
+  padding-right: 14px;
 }
 
 .contact {
@@ -287,9 +291,39 @@ body {
   margin-bottom: 20px;
 }
 
+.form-paragraph {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+.desktop-lorem {
+  display: none;
+}
+
+.form h1 {
+  padding-bottom: 20px;
+  padding-top: 28px;
+}
+
 .form-text {
   margin-left: 18px;
   margin-bottom: 31px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+form button {
+  width: 100%;
+  align-self: center;
 }
 
 input {
@@ -301,7 +335,6 @@ input {
   border: 1px solid #dfdfe0;
   box-sizing: border-box;
   border-radius: 4px;
-  margin-left: 18px;
   margin-bottom: 8px;
   font-size: 10px;
   font-family: "Poppins", sans-serif;
@@ -319,7 +352,6 @@ textarea {
   border: 1px solid #dfdfe0;
   box-sizing: border-box;
   border-radius: 4px;
-  margin-left: 18px;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   padding-left: 16px;
@@ -355,4 +387,380 @@ textarea {
   justify-content: space-around;
   margin-top: 30.5px;
   padding-bottom: 30.5px;
+}
+
+#header-nav {
+  display: none;
+}
+
+.desktop-img1 {
+  display: none;
+}
+
+.desktop-img2 {
+  display: none;
+}
+
+/* Desktop style starts here */
+
+@media only screen and (min-width: 768px) {
+  .logoimage {
+    display: none;
+  }
+
+  #menuimage {
+    display: none;
+  }
+
+  #header-nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 1440px;
+    height: 14px;
+    box-shadow: 0 0.5px 0 #dddfe6;
+  }
+
+  #header-nav > li > a {
+    text-decoration: none;
+    padding: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #1a2236;
+  }
+
+  #Geometry2 {
+    display: none;
+  }
+
+  .headline {
+    display: grid;
+    grid-template-columns: 2px;
+    padding-left: 144px;
+    padding-top: 192px;
+    margin-bottom: 402px;
+  }
+
+  .headline-container1 {
+    display: grid;
+  }
+
+  .profilelin {
+    width: 70%;
+  }
+
+  .name {
+    font-family: "Playfair Display", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+    color: #1a2236;
+  }
+
+  .bio {
+    display: flex;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #1a2236;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  #background-url1 {
+    width: 702px;
+    height: 877px;
+    left: 738px;
+    top: 81px;
+    background: url("images/image-geometry_header.svg") no-repeat;
+    position: absolute;
+  }
+
+  #background-url2 {
+    width: 175px;
+    height: 175px;
+    left: 563px;
+    top: 802px;
+    background: url("images/image_dots.svg") no-repeat;
+    position: absolute;
+  }
+
+  #projects-container {
+    display: grid;
+    background-image: url("./images/projects-container-desktop-bg.svg");
+    background-repeat: no-repeat;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    width: 100%;
+    box-sizing: border-box;
+    height: 1643px;
+    margin-bottom: 216px;
+  }
+
+  .project-heading {
+    width: 398px;
+    height: 110px;
+    font-size: 110px;
+    line-height: 100%;
+    color: #1a2236;
+    transform: rotate(-90deg);
+    position: relative;
+    left: -10px;
+    top: 125px;
+  }
+
+  .cont3 {
+    display: none;
+  }
+
+  .cont6 {
+    display: none;
+  }
+
+  #projects-container > div:nth-child(2) {
+    display: grid;
+    grid-template-rows: 205px 353px;
+    width: 960px;
+    flex-direction: column;
+  }
+
+  #projects-container > div:nth-child(2) > img {
+    position: absolute;
+    width: 960px;
+    height: 577px;
+    left: 484px;
+  }
+
+  #projects-container > div.project-container.cont1 > div {
+    /* #projects-container > div:nth-child(2) > div { */
+    position: relative;
+    width: 958px;
+    left: 407px;
+    bottom: -110%;
+    height: 332px;
+    opacity: 0.98;
+  }
+
+  .project-info {
+    /* display: flex; */
+    flex-direction: column;
+    padding-left: 60px;
+    padding-bottom: 20px;
+  }
+
+  .cont2 {
+    display: none;
+  }
+
+  .project-info-name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80%;
+    margin-top: 60px;
+  }
+
+  .project-languages {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 34px;
+    margin-bottom: 60px;
+  }
+
+  .project-languages > li {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 80%;
+  }
+
+  .button-with-arrow {
+    width: 212px;
+    height: 51px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  #projects-container > div:nth-child(3) > img {
+    position: absolute;
+    width: 465px;
+    height: 270px;
+    left: -3px;
+    top: 1833px;
+  }
+
+  #projects-container > div:nth-child(4) > img {
+    position: absolute;
+    width: 1074px;
+    height: 470px;
+    left: -137px;
+    top: 2086px;
+  }
+
+  .cont4 {
+    display: none;
+  }
+
+  #projects-container > div:nth-child(5) > img {
+    position: absolute;
+    width: 465px;
+    height: 270px;
+    left: 797px;
+    top: 2553px;
+  }
+
+  .cont5 {
+    display: none;
+  }
+
+  #projects-container > div:nth-child(7) > img {
+    position: absolute;
+    width: 465px;
+    height: 270px;
+    left: 975px;
+    top: 1757px;
+  }
+
+  #projects-container > div:nth-child(6) > img {
+    position: absolute;
+    width: 464px;
+    height: 275px;
+    left: 975px;
+    top: 2024px;
+  }
+
+  #about-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    justify-content: center;
+    width: 1120px;
+    height: 586px;
+    gap: 1rem;
+    margin-left: 160px;
+    margin-bottom: 150px;
+  }
+
+  .sub-about {
+    margin-left: 96px;
+  }
+
+  .about-heading {
+    font-weight: 400;
+    font-size: 110px;
+    color: #1a2236;
+  }
+
+  .section-about {
+    display: grid;
+    grid-template: auto auto/auto auto;
+    background-image: url(/images/image_dots_with_teal.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  .section-about .languages {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 289px;
+    height: 289px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .list1 {
+    padding-top: 51px;
+    padding-left: 50px;
+  }
+
+  .container-list {
+    padding-top: 1px;
+    padding-left: 50px;
+  }
+
+  #contact-form-section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1440px;
+    height: 950px;
+    padding-top: 168px;
+    background-image: url("images/top-left.svg"), url("images/bottom-right.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .desktop-lorem {
+    display: grid;
+    padding-top: -31px;
+    margin-top: -40px;
+  }
+
+  #contact-form-section .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form h1 {
+    padding-bottom: 40px;
+  }
+
+  form {
+    width: 545px;
+  }
+
+  form input,
+  textarea {
+    width: 100%;
+  }
+
+  form button {
+    width: 254px;
+  }
+
+  #contact-form-section div.form h1 {
+    justify-content: center;
+    font-family: "Playfair Display", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    text-align: center;
+    color: #1a2236;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    padding: 0 150px 0 150px;
+    margin: 0;
+  }
+
+  #footer .resume {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #92dcdc;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  #footer div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
 }
