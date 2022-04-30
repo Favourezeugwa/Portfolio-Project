@@ -25,10 +25,8 @@ body {
 }
 
 #menuimage {
-  width: 20px;
-  height: 14px;
-  padding-top: 19px;
-  padding-right: 16px;
+  height: 15px;
+  margin: 20px;
 }
 
 .headline {
@@ -537,17 +535,18 @@ textarea {
     left: 484px;
   }
 
-  #projects-container > div:nth-child(2) > div {
+  #projects-container > div.project-container.cont1 > div {
+    /* #projects-container > div:nth-child(2) > div { */
     position: relative;
     width: 958px;
-    left: 341px;
+    left: 407px;
     bottom: -110%;
     height: 332px;
     opacity: 0.98;
   }
 
   .project-info {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     padding-left: 60px;
     padding-bottom: 20px;

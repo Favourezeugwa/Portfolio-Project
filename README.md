@@ -2,6 +2,8 @@
 
 This is my first portfolio project, that is responsive to all screensizes. Mobile version, tablet and desktop.
 
+![Screenshot](desktop-version-screenshot.PNG)
+
 ## Built With
 
 - HTML and CSS
