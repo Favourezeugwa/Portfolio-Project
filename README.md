@@ -2,8 +2,6 @@
 
 This is my first portfolio project, that is responsive to all screensizes. Mobile version, tablet and desktop.
 
-![Screenshot](desktop-version-screenshot.PNG)
-
 ## Built With
 
 - HTML and CSS
@@ -13,7 +11,7 @@ This is my first portfolio project, that is responsive to all screensizes. Mobil
 
 ## Live Demo
 
-[link will be updated as soon as the project is complete]
+[click here for live demo] (https://favourezeugwa.github.io/First-Portfolio/)
 
 ## Getting Started
 
