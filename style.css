@@ -39,9 +39,8 @@ body {
   padding: 30px 16px 32px 16px;
 }
 
-
-
 /* The mobile-menu styling starts */
+
 #header-nav .mobile-open {
   display: flex;
   align-content: center;
