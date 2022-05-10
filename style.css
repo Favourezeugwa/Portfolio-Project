@@ -25,6 +25,9 @@ body {
 }
 
 #menuimage {
+  position: fixed;
+  right: 30px;
+  top: 10px;
   height: 15px;
   margin: 20px;
 }
@@ -35,6 +38,75 @@ body {
   flex-direction: column;
   padding: 30px 16px 32px 16px;
 }
+
+#header-nav {
+  display: none;
+}
+
+/* The mobile-menu styling starts */
+
+.mobile-open #header-nav {
+  display: flex;
+  align-content: center;
+}
+
+.mobile-open .mobile-top-bg {
+  background-image: url(images/menu_mobile_top.svg);
+  position: absolute;
+  width: 263px;
+  height: 114px;
+  left: 0;
+  top: 0;
+}
+
+.mobile-open .mobile-bottom-bg {
+  background-image: url(images/menu_mobile_bottom.svg);
+  position: absolute;
+  width: 320px;
+  height: 150px;
+  left: 0;
+  top: 418px;
+}
+
+.mobile-open ul {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 300%;
+  text-align: center;
+  position: absolute;
+  width: 66px;
+  height: 192px;
+  left: 127px;
+  top: 144px;
+  color: #000;
+}
+
+.mobile-open nav {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+#menu-close {
+  display: none;
+}
+
+.mobile-open #menuimage {
+  display: none;
+}
+
+.mobile-open #menu-close {
+  display: block;
+  z-index: 200;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+/* The mobile-menu styling ends */
 
 .name {
   font-family: "Playfair Display", serif;
@@ -232,11 +304,11 @@ body {
 }
 
 .red {
-  background-color: #e2505c;
+  background-color: #970d19;
 }
 
 .orange {
-  background-color: #febf52;
+  background-color: #a76c07;
 }
 
 .section-about {
@@ -387,10 +459,6 @@ textarea {
   justify-content: space-around;
   margin-top: 30.5px;
   padding-bottom: 30.5px;
-}
-
-#header-nav {
-  display: none;
 }
 
 .desktop-img1 {
