@@ -256,6 +256,7 @@ body {
 /* modal menu style starts */
 .modalmenu-container {
   background: #fff;
+  padding: 20px;
 }
 
 #modal-close {
@@ -278,6 +279,40 @@ body {
   font-weight: 300;
   font-size: 10.3334px;
   color: #1a2236;
+}
+.modal-image{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 278.75px;
+  height: 162.16px;
+  padding-bottom: 0px;
+
+}
+
+.popup-images {
+  display: flex;
+  margin: 0px;
+}
+
+.popup-images img {
+  width: 69.78px;
+  height: 40.54px;
+}
+
+.modal-btn {
+color: #1A2236;
+background: white;
+width: 246px;
+height: 51px;
+font-size: 18px;
+display: flex;
+justify-content: space-evenly;
+text-align: center;
+border: 1px solid #1A2236;
+}
+
+.modal-btn img {
+  /* background: #1A2236; */
+  color: #1A2236;
 }
 
 #about-container {
