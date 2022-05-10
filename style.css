@@ -39,8 +39,10 @@ body {
   padding: 30px 16px 32px 16px;
 }
 
+
+
 /* The mobile-menu styling starts */
-.mobile-open #header-nav {
+#header-nav .mobile-open {
   display: flex;
   align-content: center;
 }
@@ -50,8 +52,8 @@ body {
   position: absolute;
   width: 263px;
   height: 114px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 .mobile-open .mobile-bottom-bg {
@@ -59,7 +61,7 @@ body {
   position: absolute;
   width: 320px;
   height: 150px;
-  left: 0px;
+  left: 0;
   top: 418px;
 }
 
@@ -85,6 +87,10 @@ body {
   height: 100%;
 }
 
+#menu-close {
+  display: none;
+}
+
 .mobile-open #menuimage {
   display: none;
 }
@@ -97,9 +103,6 @@ body {
   top: 20px;
 }
 
-#menu-close {
-  display: none;
-}
 /* The mobile-menu styling ends */
 
 .name {
