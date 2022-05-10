@@ -39,6 +39,10 @@ body {
   padding: 30px 16px 32px 16px;
 }
 
+#header-nav {
+  display: none;
+}
+
 /* The mobile-menu styling starts */
 
 .mobile-open #header-nav {
@@ -455,10 +459,6 @@ textarea {
   justify-content: space-around;
   margin-top: 30.5px;
   padding-bottom: 30.5px;
-}
-
-#header-nav {
-  display: none;
 }
 
 .desktop-img1 {
