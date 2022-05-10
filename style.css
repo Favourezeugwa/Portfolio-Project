@@ -41,7 +41,7 @@ body {
 
 /* The mobile-menu styling starts */
 
-#header-nav .mobile-open {
+.mobile-open #header-nav {
   display: flex;
   align-content: center;
 }
