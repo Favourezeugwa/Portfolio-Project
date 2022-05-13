@@ -29,3 +29,7 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
+email.addEventListener('input', () => {
+  formButton.setCustomValidity('');
+});
+// Ends
