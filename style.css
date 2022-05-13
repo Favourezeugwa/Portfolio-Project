@@ -295,6 +295,17 @@ body {
   padding-bottom: 20px;
 }
 
+.bio1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+  padding-top: 20px;
+}
+
 #modal-text {
   font-weight: 800;
   font-size: 20px;
@@ -324,8 +335,6 @@ body {
   font-size: 16px;
   display: flex;
   justify-content: space-evenly;
-
-  /* text-align: center; */
   border: 1px solid #1a2236;
 }
 
@@ -501,7 +510,7 @@ input {
   box-sizing: border-box;
   border-radius: 4px;
   margin-bottom: 8px;
-  font-size: 10px;
+  /* font-size: 10px; */
   font-family: "Poppins", sans-serif;
   padding-left: 16px;
   padding-top: 4px;
