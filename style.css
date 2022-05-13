@@ -43,7 +43,7 @@ body {
   display: none;
 }
 
-/* The mobile-menu styling starts */
+/* The MOBILE-MENU popup window styling starts */
 
 .mobile-open #header-nav {
   display: flex;
@@ -106,7 +106,7 @@ body {
   top: 20px;
 }
 
-/* The mobile-menu styling ends */
+/* The MOBILE-MENU popup window styling ends */
 
 .name {
   font-family: "Playfair Display", serif;
@@ -253,10 +253,30 @@ body {
   padding-left: 2px;
 }
 
-/* modal menu style starts */
-.modalmenu-container {
+/* MODAL MENU popup window style starts */
+
+#modalmenu-container {
+  position: fixed;
   background: #fff;
+  width: 100%;
+  height: 100%;
   padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  overflow-y: scroll;
+}
+
+#modalmenu-container .project-info-name {
+  padding-top: 50px;
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+
+#modalmenu-container #modal-tech-list {
+  margin-left: 0;
+  margin-bottom: 18px;
 }
 
 #modal-close {
@@ -266,10 +286,18 @@ body {
   right: 30px;
 }
 
-.modal-head {
+#modal-close:focus,
+#modal-close:hover {
+  cursor: pointer;
+}
+
+#modal-description-container {
+  padding-bottom: 20px;
+}
+
+#modal-text {
   font-weight: 800;
   font-size: 20px;
-  /* line-height: 80%; */
   color: #1a2236;
 }
 
@@ -280,21 +308,12 @@ body {
   font-size: 10.3334px;
   color: #1a2236;
 }
+
 .modal-image {
   border: 1px solid rgba(255, 255, 255, 0.1);
   width: 278.75px;
   height: 162.16px;
-  padding-bottom: 0px;
-}
-
-.popup-images {
-  display: flex;
-  margin: 0px;
-}
-
-.popup-images img {
-  width: 69.78px;
-  height: 40.54px;
+  padding-bottom: 0;
 }
 
 .modal-btn {
@@ -305,15 +324,27 @@ body {
   font-size: 16px;
   display: flex;
   justify-content: space-evenly;
+
   /* text-align: center; */
   border: 1px solid #1a2236;
 }
 
-.modal-btn img {
+.modal-btn:active {
+  background-color: #1a2236;
+  color: #fff;
+}
+
+.modal-btn .fwd-img {
   color: #1a2236;
 }
-/* modal menu style ends */
 
+.modal-btn .github-img {
+  color: #1a2236;
+}
+
+/* MODAL MENU popup window style ends */
+
+/* The about container section starts */
 #about-container {
   display: flex;
   flex-direction: column;
@@ -411,6 +442,7 @@ body {
   height: 100px;
 }
 
+/* The contact form section starts */
 #contact-form-section {
   background: #f9f9fa;
   padding-left: 18px;
@@ -496,6 +528,7 @@ textarea {
   width: 288px;
 }
 
+/* The footer starts */
 #footer {
   margin-top: 64px;
   background: #1a2236;
@@ -530,7 +563,7 @@ textarea {
   display: none;
 }
 
-/* Desktop style starts here */
+/* DESKTOP VERSION OF THE PORTFOLIO STYLE STARTS HERE */
 
 @media only screen and (min-width: 768px) {
   .logoimage {
@@ -618,7 +651,7 @@ textarea {
     position: absolute;
   }
 
-  /* Projects section starts */
+  /* Desktop Projects section starts */
 
   #projects-container {
     display: block;
@@ -648,45 +681,45 @@ textarea {
     height: 100%;
   }
 
-  .project-container {
+  .project-wrapper {
     position: relative;
   }
 
-  .project-container:first-of-type {
+  .project-wrapper:first-of-type {
     width: 945px;
     height: 558px;
     left: 486px;
     top: -107px;
   }
 
-  .project-container:nth-of-type(2) {
+  .project-wrapper:nth-of-type(2) {
     width: 465px;
     height: 270px;
     top: -22px;
   }
 
-  .project-container:nth-of-type(3) {
+  .project-wrapper:nth-of-type(3) {
     width: 792px;
     height: 475px;
     top: -29px;
     left: 0;
   }
 
-  .project-container:nth-of-type(4) {
+  .project-wrapper:nth-of-type(4) {
     width: 465px;
     height: 270px;
     left: 78%;
     top: -35px;
   }
 
-  .project-container:nth-of-type(5) {
+  .project-wrapper:nth-of-type(5) {
     width: 465px;
     height: 270px;
     left: 95%;
     top: -839px;
   }
 
-  .project-container:nth-of-type(6) {
+  .project-wrapper:nth-of-type(6) {
     width: 465px;
     height: 270px;
     left: 95%;
@@ -702,29 +735,39 @@ textarea {
     display: none;
   }
 
-  #projects-container > div:nth-child(2) > img:hover + .project-info {
+  #project-wrapper > div:nth-child(1) > div > img:hover + .project-info {
     display: block;
-    transition-duration: 0.5s;
+    transition-duration: 5s;
   }
 
-  #projects-container > div:nth-child(3) > img:hover + .project-info {
+  #project-wrapper > div:nth-child(2) > div > img:hover + .project-info {
     display: block;
+    transition-duration: 5s;
   }
 
-  #projects-container > div:nth-child(4) > img:hover + .project-info {
+  #project-wrapper > div:nth-child(3) > div > img:hover + .project-info {
     display: block;
+    transition-duration: 5s;
   }
 
-  #projects-container > div:nth-child(5) > img:hover + .project-info {
+  #project-wrapper > div:nth-child(4) > div > img:hover + .project-info {
     display: block;
+    transition-duration: 5s;
   }
 
-  #projects-container > div:nth-child(6) > img:hover + .project-info {
+  #project-wrapper > div:nth-child(5) > div > img:hover + .project-info {
     display: block;
+    transition-duration: 5s;
   }
 
-  #projects-container > div:nth-child(7) > img:hover + .project-info {
+  #project-wrapper > div:nth-child(6) > div > img:hover + .project-info {
     display: block;
+    transition-duration: 5s;
+  }
+
+  #project-wrapper > div:nth-child(7) > div > img:hover + .project-info {
+    display: block;
+    transition-duration: 5s;
   }
 
   .cont1 .project-info-name,
@@ -734,6 +777,16 @@ textarea {
     font-size: 60px;
     line-height: 80%;
     margin-top: 60px;
+  }
+
+  /* modal popup lang style changed due to linters */
+  .modal-lang li {
+    background: #fff;
+    border: 0.516669px solid #1a2236;
+    font-weight: 300;
+    font-size: 20px;
+    color: #1a2236;
+    padding: 10px;
   }
 
   .cont1 .project-languages,
@@ -754,15 +807,15 @@ textarea {
     line-height: 80%;
   }
 
-  .cont1 .button-with-arrow,
-  .cont3 .button-with-arrow {
+  .button-with-arrow {
     width: 212px;
     height: 51px;
     font-size: 18px;
     line-height: 27px;
   }
 
-  .button-with-arrow {
+  .cont1 .button-with-arrow,
+  .cont3 .button-with-arrow {
     width: 212px;
     height: 51px;
     font-size: 18px;
@@ -775,15 +828,15 @@ textarea {
     border: 1px solid #1a2236;
   }
 
-  .button-with-arrow:focus {
+  .button-with-arrow:active {
     background: #fff;
     color: #1a2236;
     border: 1px solid #1a2236;
   }
 
-  /* Project section ends */
+  /* Desktop Project section ends */
 
-  /* The about section starts here */
+  /* The About section starts here */
 
   #about-container {
     display: flex;
@@ -886,6 +939,7 @@ textarea {
     color: #1a2236;
   }
 
+  /* The footer section starts */
   #footer {
     display: flex;
     flex-direction: row;
@@ -913,29 +967,136 @@ textarea {
     justify-content: space-between;
     gap: 2rem;
   }
+
+  /* Desktop modal menu popup starts */
+
+  #modalmenu-container {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    overflow-y: scroll;
+    border: 40px solid rgba(26, 34, 54, 0.95);
+  }
+
+  #modalmenu-container .project-info-name {
+    padding-top: 50px;
+    padding-left: 0;
+    padding-bottom: 34px;
+  }
+
+  #modalmenu-container #modal-tech-list {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  #modal-close {
+    display: block;
+    z-index: 200;
+    position: absolute;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+  }
+
+  #modal-close:focus,
+  #modal-close:hover {
+    cursor: pointer;
+  }
+
+  .bio1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    padding-top: 0;
+    display: flex;
+    letter-spacing: -0.01em;
+    color: #1a2236;
+  }
+
+  #modal-description-container {
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  #modal-description-container .bio1 {
+    padding-top: 30px;
+  }
+
+  #modal-text {
+    font-weight: 700;
+    font-size: 60px;
+    color: #1a2236;
+  }
+
+  .modal-image {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 1179px;
+    height: 685.85px;
+    padding-bottom: 0;
+  }
+
+  #modal-button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  .modal-btn {
+    color: #1a2236;
+    background: white;
+    width: 246px;
+    height: 51px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #1a2236;
+  }
+
+  .modal-btn:active {
+    background-color: #1a2236;
+    color: #fff;
+  }
+
+  .modal-btn .fwd-img {
+    color: #1a2236;
+  }
+
+  .modal-btn .github-img {
+    color: #1a2236;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-  .project-container:nth-of-type(4) {
+  .project-wrapper:nth-of-type(4) {
     left: 799px;
   }
 
-  .project-container:nth-of-type(5),
-  .project-container:nth-of-type(6) {
+  .project-wrapper:nth-of-type(5),
+  .project-wrapper:nth-of-type(6) {
     left: 975px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .project-container:nth-of-type(4) {
+  .project-wrapper:nth-of-type(4) {
     left: 56%;
   }
 
-  .project-container:nth-of-type(5) {
+  .project-wrapper:nth-of-type(5) {
     left: 68%;
   }
 
-  .project-container:nth-of-type(6) {
+  .project-wrapper:nth-of-type(6) {
     left: 68%;
     top: -1376px;
   }
