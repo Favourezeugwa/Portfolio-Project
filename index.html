@@ -1,364 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>favour's porfolio page</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header id="toolbar">
-      <a href="index.html"
-        ><img
-          class="logoimage"
-          src="images/image_geometry_1(1).svg"
-          alt="My portfolio's logo"
-      /></a>
-      <nav>
-        <!-- Desktop nav-link starts-->
-        <ul id="header-nav">
-          <li><a href="#headline">Hello</a></li>
-          <li><a href="#projects-container">Portfolio</a></li>
-          <li><a href="#about-container">About</a></li>
-          <li><a href="#contact-form-section">Contact</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>favour's porfolio page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="toolbar">
+    <a href="index.html"><img class="logoimage" src="images/image_geometry_1(1).svg" alt="My portfolio's logo" /></a>
+    <nav>
+      <!-- Desktop nav-link starts-->
+      <ul id="header-nav">
+        <li><a href="#headline">Hello</a></li>
+        <li><a href="#projects-container">Portfolio</a></li>
+        <li><a href="#about-container">About</a></li>
+        <li><a href="#contact-form-section">Contact</a></li>
+      </ul>
+      <!-- Desktop nav-link ends -->
+      <img src="./images/ic_menu.svg" alt="menu icon" id="menuimage" />
+      <img src="images/cancel-union.svg" alt="menu-close icon" id="menu-close" />
+      <div class="mobile-top-bg"></div>
+      <div class="mobile-bottom-bg"></div>
+    </nav>
+  </header>
+  <section class="headline" id="headline">
+    <div class="headline-container1">
+      <h1 class="name">Favour <br />Ezeugwa</h1>
+      <p class="bio">
+        Hello! I am a software developer! I can help you build a product,
+        feature or website. Take a look at some of my works. If you like what
+        you see and have a project you need coded, don't hesitate and contact
+        me.
+      </p>
+      <button type="button" class="btn profilelin">
+        Start collaboration
+      </button>
+    </div>
+    <div class="headline-container2">
+      <!-- Desktop first-background-image -->
+      <div id="background-url1"></div>
+      <div id="background-url2"></div>
+      <!-- Desktop first-background-image ends-->
+      <div id="Geometry2"></div>
+    </div>
+  </section>
+
+  <!-- Projects container written in popup.js file -->
+  <section id="projects-container">
+    <h1 class="project-heading">Projects</h1>
+    <div id="project-wrapper">
+    </div>
+  </section>
+
+  <!-- The modal menu container written in popup.js file -->
+
+  <!-- About container -->
+  <section id="about-container">
+    <div class="sub-about">
+      <h1 class="about-heading">About</h1>
+      <p class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ea eiusmod
+      </p>
+      <button type="button" class="btn download-button">
+        Get my cv
+        <img src="./images/ic_download.png" alt="a download button" />
+      </button>
+    </div>
+    <div class="section-about">
+      <!-- Blue about section -->
+      <div class="languages blue">
+        <h1 class="list1">languages</h1>
+        <ul class="container-list">
+          <li><span>&bull; JavaScript(ES5/ES6)</span></li>
+          <li><span>&bull; Ruby</span></li>
+          <li><span>&bull; HTML</span></li>
+          <li><span>&bull; Css</span></li>
         </ul>
-        <!-- Desktop nav-link ends -->
-        <img src="./images/ic_menu.svg" alt="menu icon" id="menuimage" />
-        <img
-          src="images/cancel-union.svg"
-          alt="menu-close icon"
-          id="menu-close"
-        />
-        <div class="mobile-top-bg"></div>
-        <div class="mobile-bottom-bg"></div>
-      </nav>
-    </header>
-    <section class="headline" id="headline">
-      <div class="headline-container1">
-        <h1 class="name">Favour <br />Ezeugwa</h1>
-        <p class="bio">
-          Hello! I am a software developer! I can help you build a product,
-          feature or website. Take a look at some of my works. If you like what
-          you see and have a project you need coded, don't hesitate and contact
-          me.
+        <img class="about-img" src="./images/h.png" alt="hash tag" />
+      </div>
+      <!-- Red about section -->
+      <div class="languages red">
+        <h1 class="list1">Frameworks</h1>
+        <ul class="container-list">
+          <li><span>&bull; Bootstrap</span></li>
+          <li><span>&bull; Ruby on Rails</span></li>
+          <li><span>&bull; RSpec</span></li>
+          <li><span>&bull; Capibara</span></li>
+          <li><span>&bull; Selenuim</span></li>
+        </ul>
+        <img class="about-img" src="./images/ic_framework.png" alt="framework icon" />
+      </div>
+      <!-- Orange about section -->
+      <div class="languages orange">
+        <h1 class="list1">Skills</h1>
+        <ul class="container-list">
+          <li><span>&bull; Codekit</span></li>
+          <li><span>&bull; Codepen</span></li>
+          <li><span>&bull; Github</span></li>
+          <li><span>&bull; GitLab</span></li>
+          <li><span>&bull; Terminal</span></li>
+        </ul>
+        <img class="about-img" src="./images/ic_skills.png" alt="lightbulb icon" />
+      </div>
+    </div>
+  </section>
+  <section id="contact-form-section">
+    <div class="logoimage">
+      <a href="index.html"><img class="logoimage" src="images/image_geometry_1(1).svg" alt="My portfolio's logo" /></a>
+    </div>
+    <div class="form">
+      <h1 class="name">Get started</h1>
+      <div class="paragraph-div">
+        <p class="form-paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna
         </p>
-        <button type="button" class="btn profilelin">
+        <p class="form-paragraph form-text desktop-lorem">
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <form action="https://formspree.io/f/mgedpadw" method="POST">
+        <div class="form-container">
+          <label for="username"></label>
+          <input type="text" id="username" name="user_name" placeholder="Your name" maxlength="30" required />
+        </div>
+        <div class="form-container">
+          <label for="email"></label>
+          <input type="email" id="email" name="e-mail" placeholder="Your email" required />
+        </div>
+        <div class="form-container">
+          <label for="message">
+            <textarea name="message" id="message" cols="30" rows="10" maxlength="500"
+              placeholder="Enter your message here..." required></textarea>
+          </label>
+        </div>
+        <button type="submit" class="btn profilelin">
           Start collaboration
         </button>
-      </div>
-      <div class="headline-container2">
-        <!-- Desktop first-background-image -->
-        <div id="background-url1"></div>
-        <div id="background-url2"></div>
-        <!-- Desktop first-background-image ends-->
-        <div id="Geometry2"></div>
-      </div>
-    </section>
+      </form>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="resume">
+      <p>Get my resume</p>
+      <a href="index.html"><img id="union_fwd" src="images/Union_fwd.png" alt="union_fwd image" /></a>
+    </div>
+    <div>
+      <ul class="social-links">
+        <li>
+          <a href="https://stackoverflow.com/users/18994738/favour-ezeugwa"><img class="links"
+              src="images/ic_stackoverflow.png" alt="stackoverflow logo" /></a>
+        </li>
+        <li>
+          <a href="https://github.com/Favourezeugwa"><img id="link" src="images/ic_github.png" alt="github logo" /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Favour_ezeugwa"><img class="links" src="images/ic_twitter.png"
+              alt="twitter logo" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/favour-amarachi-ezeugwa-a5bb31149/"><img class="links"
+              src="images/ic_linkedIn(1).png" alt="linkedIn logo" /></a>
+        </li>
+        <li>
+          <a href="favourezeugwa@gmail.com"><img class="links" src="images/ic_mail(2).png" alt="mailbox logo" /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/ama_ez/?hl=en"><img class="links" src="images/Vector(5).png"
+              alt="est logo" /></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
+  <script src="./js/popup.js"></script>
+</body>
 
-    <section id="projects-container">
-      <h1 class="project-heading">Projects</h1>
-      <div class="project-container">
-        <img
-          src="./images/Rectangle_1.png.png"
-          class="project-image"
-          alt="laptop"
-        />
-        <div class="project-info cont1">
-          <p class="project-info-name">Project name goes here</p>
-          <ul class="project-languages">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>Javascript</li>
-          </ul>
-          <button type="button" class="btn button-with-arrow">
-            See this project
-            <img src="./images/Union.png" alt="a forward icon" />
-          </button>
-        </div>
-      </div>
-      <div class="project-container all2">
-        <img
-          src="./images/Rectangle_2.png.png"
-          class="project-image"
-          alt="laptop"
-        />
-        <div class="project-info cont2">
-          <p class="project-info-name">Project name goes here</p>
-          <ul class="project-languages">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>Javascript</li>
-          </ul>
-          <button type="button" class="btn button-with-arrow">
-            See this project
-            <img src="./images/Union.png" alt="a forward icon" />
-          </button>
-        </div>
-      </div>
-      <div class="project-container">
-        <img
-          src="./images/Rectangle_3.png.png"
-          class="project-image"
-          alt="laptop"
-        />
-        <div class="project-info cont3">
-          <p class="project-info-name">Project name goes here</p>
-          <ul class="project-languages">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>Javascript</li>
-          </ul>
-          <button type="button" class="btn button-with-arrow">
-            See this project
-            <img src="./images/Union.png" alt="forward icon" />
-          </button>
-        </div>
-      </div>
-      <div class="project-container">
-        <img
-          src="./images/Rectangle_4.png.png"
-          class="project-image"
-          alt="laptop"
-        />
-        <div class="project-info cont4">
-          <p class="project-info-name">Project name goes here</p>
-          <ul class="project-languages">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>Javascript</li>
-          </ul>
-          <button type="button" class="btn button-with-arrow">
-            See this project
-            <img src="./images/Union.png" alt="a forward icon" />
-          </button>
-        </div>
-      </div>
-      <div class="project-container">
-        <img
-          src="./images/Rectangle_5.png.png"
-          class="project-image"
-          alt="laptop"
-        />
-        <div class="project-info cont5">
-          <p class="project-info-name">Project name goes here</p>
-          <ul class="project-languages">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>Javascript</li>
-          </ul>
-          <button type="button" class="btn button-with-arrow">
-            See this project
-            <img src="./images/Union.png" alt="a forward icon" />
-          </button>
-        </div>
-      </div>
-      <div class="project-container">
-        <img
-          src="./images/Rectangle_6.png.png"
-          class="project-image"
-          alt="laptop"
-        />
-        <div class="project-info cont6">
-          <p class="project-info-name">Project name goes here</p>
-          <ul class="project-languages">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>Javascript</li>
-          </ul>
-          <button type="button" class="btn button-with-arrow">
-            See this project
-            <img src="./images/Union.png" alt="a forward icon" />
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section id="about-container">
-      <div class="sub-about">
-        <h1 class="about-heading">About</h1>
-        <p class="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ea eiusmod
-        </p>
-        <button type="button" class="btn download-button">
-          Get my cv
-          <img src="./images/ic_download.png" alt="a download button" />
-        </button>
-      </div>
-
-      <div class="section-about">
-        <!-- Blue about section -->
-        <div class="languages blue">
-          <h1 class="list1">languages</h1>
-          <ul class="container-list">
-            <li><span>&bull; JavaScript(ES5/ES6)</span></li>
-            <li><span>&bull; Ruby</span></li>
-            <li><span>&bull; HTML</span></li>
-            <li><span>&bull; Css</span></li>
-          </ul>
-          <img class="about-img" src="./images/h.png" alt="hash tag" />
-        </div>
-        <!-- Red about section -->
-        <div class="languages red">
-          <h1 class="list1">Frameworks</h1>
-          <ul class="container-list">
-            <li><span>&bull; Bootstrap</span></li>
-            <li><span>&bull; Ruby on Rails</span></li>
-            <li><span>&bull; RSpec</span></li>
-            <li><span>&bull; Capibara</span></li>
-            <li><span>&bull; Selenuim</span></li>
-          </ul>
-          <img
-            class="about-img"
-            src="./images/ic_framework.png"
-            alt="framework icon"
-          />
-        </div>
-        <!-- Orange about section -->
-        <div class="languages orange">
-          <h1 class="list1">Skills</h1>
-          <ul class="container-list">
-            <li><span>&bull; Codekit</span></li>
-            <li><span>&bull; Codepen</span></li>
-            <li><span>&bull; Github</span></li>
-            <li><span>&bull; GitLab</span></li>
-            <li><span>&bull; Terminal</span></li>
-          </ul>
-          <img
-            class="about-img"
-            src="./images/ic_skills.png"
-            alt="lightbulb icon"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="contact-form-section">
-      <div class="logoimage">
-        <a href="index.html"
-          ><img
-            class="logoimage"
-            src="images/image_geometry_1(1).svg"
-            alt="My portfolio's logo"
-        /></a>
-      </div>
-      <div class="form">
-        <h1 class="name">Get started</h1>
-        <div class="paragraph-div">
-          <p class="form-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna
-          </p>
-          <p class="form-paragraph form-text desktop-lorem">
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </div>
-        <form action="https://formspree.io/f/mgedpadw" method="POST">
-          <div class="form-container">
-            <label for="username"></label>
-            <input
-              type="text"
-              id="username"
-              name="user_name"
-              placeholder="Your name"
-              maxlength="30"
-              required
-            />
-          </div>
-          <div class="form-container">
-            <label for="email"></label>
-            <input
-              type="email"
-              id="email"
-              name="e-mail"
-              placeholder="Your email"
-              required
-            />
-          </div>
-          <div class="form-container">
-            <label for="message">
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                maxlength="500"
-                placeholder="Enter your message here..."
-                required
-              ></textarea>
-            </label>
-          </div>
-          <button type="submit" class="btn profilelin">
-            Start collaboration
-          </button>
-        </form>
-      </div>
-    </section>
-    <footer id="footer">
-      <div class="resume">
-        <p>Get my resume</p>
-        <a href="index.html"
-          ><img id="union_fwd" src="images/Union_fwd.png" alt="union_fwd image"
-        /></a>
-      </div>
-      <div>
-        <ul class="social-links">
-          <li>
-            <a href="https://stackoverflow.com/users/18994738/favour-ezeugwa"
-              ><img
-                class="links"
-                src="images/ic_stackoverflow.png"
-                alt="stackoverflow logo"
-            /></a>
-          </li>
-          <li>
-            <a href="https://github.com/Favourezeugwa"
-              ><img id="link" src="images/ic_github.png" alt="github logo"
-            /></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/Favour_ezeugwa"
-              ><img
-                class="links"
-                src="images/ic_twitter.png"
-                alt="twitter logo"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/favour-amarachi-ezeugwa-a5bb31149/"
-              ><img
-                class="links"
-                src="images/ic_linkedIn(1).png"
-                alt="linkedIn logo"
-            /></a>
-          </li>
-          <li>
-            <a href="favourezeugwa@gmail.com"
-              ><img
-                class="links"
-                src="images/ic_mail(2).png"
-                alt="mailbox logo"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/ama_ez/?hl=en"
-              ><img class="links" src="images/Vector(5).png" alt="est logo"
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <script src="main.js"></script>
-  </body>
 </html>

@@ -43,7 +43,7 @@ body {
   display: none;
 }
 
-/* The mobile-menu styling starts */
+/* The MOBILE-MENU popup window styling starts */
 
 .mobile-open #header-nav {
   display: flex;
@@ -106,7 +106,7 @@ body {
   top: 20px;
 }
 
-/* The mobile-menu styling ends */
+/* The MOBILE-MENU popup window styling ends */
 
 .name {
   font-family: "Playfair Display", serif;
@@ -253,6 +253,98 @@ body {
   padding-left: 2px;
 }
 
+/* MODAL MENU popup window style starts */
+
+#modalmenu-container {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  overflow-y: scroll;
+}
+
+#modalmenu-container .project-info-name {
+  padding-top: 50px;
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+
+#modalmenu-container #modal-tech-list {
+  margin-left: 0;
+  margin-bottom: 18px;
+}
+
+#modal-close {
+  display: block;
+  z-index: 200;
+  position: absolute;
+  right: 30px;
+}
+
+#modal-close:focus,
+#modal-close:hover {
+  cursor: pointer;
+}
+
+#modal-description-container {
+  padding-bottom: 20px;
+}
+
+#modal-text {
+  font-weight: 800;
+  font-size: 20px;
+  color: #1a2236;
+}
+
+.modal-lang li {
+  background: #fff;
+  border: 0.516669px solid #1a2236;
+  font-weight: 300;
+  font-size: 10.3334px;
+  color: #1a2236;
+}
+
+.modal-image {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 278.75px;
+  height: 162.16px;
+  padding-bottom: 0;
+}
+
+.modal-btn {
+  color: #1a2236;
+  background: white;
+  width: 246px;
+  height: 51px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-evenly;
+
+  /* text-align: center; */
+  border: 1px solid #1a2236;
+}
+
+.modal-btn:active {
+  background-color: #1a2236;
+  color: #fff;
+}
+
+.modal-btn .fwd-img {
+  color: #1a2236;
+}
+
+.modal-btn .github-img {
+  color: #1a2236;
+}
+
+/* MODAL MENU popup window style ends */
+
+/* The about container section starts */
 #about-container {
   display: flex;
   flex-direction: column;
@@ -350,6 +442,7 @@ body {
   height: 100px;
 }
 
+/* The contact form section starts */
 #contact-form-section {
   background: #f9f9fa;
   padding-left: 18px;
@@ -435,6 +528,7 @@ textarea {
   width: 288px;
 }
 
+/* The footer starts */
 #footer {
   margin-top: 64px;
   background: #1a2236;
@@ -469,7 +563,7 @@ textarea {
   display: none;
 }
 
-/* Desktop style starts here */
+/* DESKTOP VERSION OF THE PORTFOLIO STYLE STARTS HERE */
 
 @media only screen and (min-width: 768px) {
   .logoimage {
@@ -557,16 +651,17 @@ textarea {
     position: absolute;
   }
 
+  /* Desktop Projects section starts */
+
   #projects-container {
-    display: grid;
+    display: block;
+    position: relative;
     background-image: url("./images/projects-container-desktop-bg.svg");
     background-repeat: no-repeat;
-    grid-template-columns: repeat(10, 10%);
-    grid-template-rows: repeat(10, 10%);
-    width: 100%;
+    width: 1440px;
     box-sizing: border-box;
     height: 1643px;
-    margin-bottom: 216px;
+    margin-bottom: 150px;
   }
 
   .project-heading {
@@ -578,53 +673,105 @@ textarea {
     transform: rotate(-90deg);
     position: relative;
     left: -10px;
-    top: 125px;
+    top: 150px;
   }
 
-  .cont1 {
-    display: none;
+  .project-image {
+    width: 100%;
+    height: 100%;
   }
 
-  .cont2 {
-    display: none;
+  .project-wrapper {
+    position: relative;
   }
 
-  .cont3 {
-    display: none;
+  .project-wrapper:first-of-type {
+    width: 945px;
+    height: 558px;
+    left: 486px;
+    top: -107px;
   }
 
-  .cont4 {
-    display: none;
+  .project-wrapper:nth-of-type(2) {
+    width: 465px;
+    height: 270px;
+    top: -22px;
   }
 
-  .cont5 {
-    display: none;
+  .project-wrapper:nth-of-type(3) {
+    width: 792px;
+    height: 475px;
+    top: -29px;
+    left: 0;
   }
 
-  .cont6 {
-    display: none;
+  .project-wrapper:nth-of-type(4) {
+    width: 465px;
+    height: 270px;
+    left: 78%;
+    top: -35px;
   }
 
-  #projects-container > div:nth-child(2) > img {
-    position: absolute;
-    width: 960px;
-    height: 577px;
-    left: 484px;
+  .project-wrapper:nth-of-type(5) {
+    width: 465px;
+    height: 270px;
+    left: 95%;
+    top: -839px;
+  }
+
+  .project-wrapper:nth-of-type(6) {
+    width: 465px;
+    height: 270px;
+    left: 95%;
+    top: -1370px;
   }
 
   .project-info {
-    position: relative;
     position: absolute;
-    transform: translateY(100%);
-    bottom: 0;
+    bottom: 7px;
     background: #1a2236;
-    width: fit-content;
-    transition: all 0.2s ease-in;
+    width: 100%;
     opacity: 0.98;
-    overflow: hidden;
+    display: none;
   }
 
-  .project-info-name {
+  #project-wrapper > div:nth-child(1) > div > img:hover + .project-info {
+    display: block;
+    transition-duration: 5s;
+  }
+
+  #project-wrapper > div:nth-child(2) > div > img:hover + .project-info {
+    display: block;
+    transition-duration: 5s;
+  }
+
+  #project-wrapper > div:nth-child(3) > div > img:hover + .project-info {
+    display: block;
+    transition-duration: 5s;
+  }
+
+  #project-wrapper > div:nth-child(4) > div > img:hover + .project-info {
+    display: block;
+    transition-duration: 5s;
+  }
+
+  #project-wrapper > div:nth-child(5) > div > img:hover + .project-info {
+    display: block;
+    transition-duration: 5s;
+  }
+
+  #project-wrapper > div:nth-child(6) > div > img:hover + .project-info {
+    display: block;
+    transition-duration: 5s;
+  }
+
+  #project-wrapper > div:nth-child(7) > div > img:hover + .project-info {
+    display: block;
+    transition-duration: 5s;
+  }
+
+  .cont1 .project-info-name,
+  .cont3 .project-info-name {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 60px;
@@ -632,7 +779,18 @@ textarea {
     margin-top: 60px;
   }
 
-  .project-languages {
+  /* modal popup lang style changed due to linters */
+  .modal-lang li {
+    background: #fff;
+    border: 0.516669px solid #1a2236;
+    font-weight: 300;
+    font-size: 20px;
+    color: #1a2236;
+    padding: 10px;
+  }
+
+  .cont1 .project-languages,
+  .cont3 .project-languages {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -640,7 +798,8 @@ textarea {
     margin-bottom: 60px;
   }
 
-  .project-languages > li {
+  .cont1 .project-languages > li,
+  .cont3 .project-languages > li {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -655,45 +814,29 @@ textarea {
     line-height: 27px;
   }
 
-  #projects-container > div:nth-child(3) > img {
-    position: absolute;
-    width: 465px;
-    height: 270px;
-    left: -3px;
-    top: 1833px;
+  .cont1 .button-with-arrow,
+  .cont3 .button-with-arrow {
+    width: 212px;
+    height: 51px;
+    font-size: 18px;
+    line-height: 27px;
   }
 
-  #projects-container > div:nth-child(4) > img {
-    position: absolute;
-    width: 1074px;
-    height: 470px;
-    left: -137px;
-    top: 2086px;
+  .button-with-arrow:hover {
+    background: #fff;
+    color: #1a2236;
+    border: 1px solid #1a2236;
   }
 
-  #projects-container > div:nth-child(5) > img {
-    position: absolute;
-    width: 465px;
-    height: 270px;
-    left: 797px;
-    top: 2553px;
+  .button-with-arrow:active {
+    background: #fff;
+    color: #1a2236;
+    border: 1px solid #1a2236;
   }
 
-  #projects-container > div:nth-child(7) > img {
-    position: absolute;
-    width: 465px;
-    height: 270px;
-    left: 975px;
-    top: 1757px;
-  }
+  /* Desktop Project section ends */
 
-  #projects-container > div:nth-child(6) > img {
-    position: absolute;
-    width: 464px;
-    height: 275px;
-    left: 975px;
-    top: 2024px;
-  }
+  /* The About section starts here */
 
   #about-container {
     display: flex;
@@ -796,6 +939,7 @@ textarea {
     color: #1a2236;
   }
 
+  /* The footer section starts */
   #footer {
     display: flex;
     flex-direction: row;
@@ -822,5 +966,138 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
+  }
+
+  /* Desktop modal menu popup starts */
+
+  #modalmenu-container {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    overflow-y: scroll;
+    border: 40px solid rgba(26, 34, 54, 0.95);
+  }
+
+  #modalmenu-container .project-info-name {
+    padding-top: 50px;
+    padding-left: 0;
+    padding-bottom: 34px;
+  }
+
+  #modalmenu-container #modal-tech-list {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  #modal-close {
+    display: block;
+    z-index: 200;
+    position: absolute;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+  }
+
+  #modal-close:focus,
+  #modal-close:hover {
+    cursor: pointer;
+  }
+
+  .bio1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    padding-top: 0;
+    display: flex;
+    letter-spacing: -0.01em;
+    color: #1a2236;
+  }
+
+  #modal-description-container {
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  #modal-description-container .bio1 {
+    padding-top: 30px;
+  }
+
+  #modal-text {
+    font-weight: 700;
+    font-size: 60px;
+    color: #1a2236;
+  }
+
+  .modal-image {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 1179px;
+    height: 685.85px;
+    padding-bottom: 0;
+  }
+
+  #modal-button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  .modal-btn {
+    color: #1a2236;
+    background: white;
+    width: 246px;
+    height: 51px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #1a2236;
+  }
+
+  .modal-btn:active {
+    background-color: #1a2236;
+    color: #fff;
+  }
+
+  .modal-btn .fwd-img {
+    color: #1a2236;
+  }
+
+  .modal-btn .github-img {
+    color: #1a2236;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .project-wrapper:nth-of-type(4) {
+    left: 799px;
+  }
+
+  .project-wrapper:nth-of-type(5),
+  .project-wrapper:nth-of-type(6) {
+    left: 975px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-wrapper:nth-of-type(4) {
+    left: 56%;
+  }
+
+  .project-wrapper:nth-of-type(5) {
+    left: 68%;
+  }
+
+  .project-wrapper:nth-of-type(6) {
+    left: 68%;
+    top: -1376px;
   }
 }
