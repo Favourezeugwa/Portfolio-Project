@@ -4,14 +4,16 @@ This is my first portfolio project, that is responsive to all screensizes. Mobil
 
 ## Built With
 
-- HTML and CSS
-  -Media query
+- HTML
+- CSS
+- JavaScript
+- Media query
 - Github and Git
-- Linters (HTML & CSS)
+- Linters (HTML, CSS and JavaScript)
 
 ## Live Demo
 
-[click here for live demo] (https://favourezeugwa.github.io/First-Portfolio/)
+[click here for live demo](https://favourezeugwa.github.io/First-Portfolio/)
 
 ## Getting Started
 
@@ -53,6 +55,10 @@ This is my first portfolio project, that is responsive to all screensizes. Mobil
 - GitHub: [@edubew](https://github.com/edubew)
 - Twitter: [@edube_winne](https://twitter.com/edube_winne)
 - LinkedIn: [Winfred Edube](https://www.linkedin.com/in/winfred-edube-9820a422a/)
+
+👤 **Godfrey Arksel**
+
+- GitHub: [@godiarksel](https://github.com/godiarksel)
 
 ## 🤝 Contributing
 
