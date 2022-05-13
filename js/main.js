@@ -33,3 +33,27 @@ email.addEventListener('input', () => {
   formButton.setCustomValidity('');
 });
 // Ends
+
+// Local storage
+const userName = document.getElementById('username');
+const message = document.getElementById('message');
+
+function localStorageData() {
+  contactForm.addEventListener('input', () => {
+    const userData = {
+      name: userName.value,
+      user_email: email.value,
+      user_message: message.value,
+    };
+    localStorage.setItem('userData', JSON.stringify(userData));
+  });
+}
+localStorageData();
+
+function getLocalStorage() {
+  const getData = JSON.parse(localStorage.getItem('userData'));
+  userName.value = getData.name;
+  email.value = getData.user_email;
+  message.value = getData.user_message;
+}
+getLocalStorage();
