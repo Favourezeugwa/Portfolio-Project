@@ -1,6 +1,6 @@
 ## Portfolio setup and mobile version skeleton.
 
-This is my first portfolio project, that is responsive to all screensizes. Mobile version, tablet and desktop.
+This is my first portfolio project and it is responsive to all screensizes. Mobile version, tablet and desktop.
 
 ## Built With
 
@@ -21,7 +21,6 @@ This is my first portfolio project, that is responsive to all screensizes. Mobil
 
 - clone into First-project repository by using the `git clone`
 - cd into the repository using git bash terminal
-- cd from main into the feature branch `second-setup`
 - open VScode terminal
 - Go live
 
