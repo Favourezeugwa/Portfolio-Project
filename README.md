@@ -13,7 +13,7 @@ This is my first portfolio project and it is responsive to all screensizes. Mobi
 
 ## Live Demo
 
-[click here for live demo](https://favourezeugwa.github.io/First-Portfolio/)
+[click here for live demo](https://favourezeugwa.github.io/Portfolio-Project/)
 
 ## Getting Started
 
