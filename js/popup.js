@@ -1,13 +1,13 @@
 // Javascript array (projectInformation) made up of javascript objects.
 const projectInformation = [
   {
-    name: 'Project name goes here',
-    description1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    description2: 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    featuredImage: './images/Rectangle_1.png.png',
-    technologies: ['HTML/CSS', 'Ruby on rails', 'Javascript'],
-    liveVersion: '#',
-    linkToSource: '#',
+    name: 'To-do List',
+    description1: 'To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. It also allows you to edit notes and delete task that has been completed ',
+    description2: 'Here is a simple website that allows for doing that. I call this an ultimate productivity app.',
+    featuredImage: './images/todo-desktop.png',
+    technologies: ['HTML5', 'CSS', 'Javascript-ES6'],
+    liveVersion: 'https://favourezeugwa.github.io/TO-DO-LIST/dist/',
+    linkToSource: 'https://github.com/Favourezeugwa/TO-DO-LIST',
   },
   {
     name: 'Project name goes here',
@@ -200,24 +200,34 @@ function showProjectInformationModal(i) {
   modalbutton1.classList.add('btn', 'button-with-arrow', 'modal-btn');
   modalbutton1.textContent = 'See Live';
 
+  const seeLiveLink = document.createElement('a');
+  seeLiveLink.setAttribute('href', projectInformation[i].liveVersion);
+  seeLiveLink.innerText = "";
+  seeLiveLink.appendChild(modalbutton1);
+
   const modalbutton1Image = document.createElement('img');
   modalbutton1Image.className = 'fwd-img';
   modalbutton1Image.src = './images/ic_link.black.png';
-  modalbutton1Image.alt = 'a forward icon';
+  modalbutton1Image.alt = 'a forward icon'; 
   modalbutton1.appendChild(modalbutton1Image);
-  projectModalButtons.appendChild(modalbutton1);
+  projectModalButtons.appendChild(seeLiveLink);
 
   const modalbutton2 = document.createElement('button');
   modalbutton2.id = 'see-source-button';
   modalbutton2.classList.add('btn', 'button-with-arrow', 'modal-btn');
   modalbutton2.textContent = 'See Source';
 
+  const seeSourceLink = document.createElement('a');
+  seeSourceLink.setAttribute('href', projectInformation[i].linkToSource);
+  seeSourceLink.innerText = "";
+  seeSourceLink.appendChild(modalbutton2);
+
   const modalbutton2Image = document.createElement('img');
   modalbutton2Image.className = 'github-img';
   modalbutton2Image.src = './images/ic_github_black.png';
   modalbutton2Image.alt = 'a github icon';
   modalbutton2.appendChild(modalbutton2Image);
-  projectModalButtons.appendChild(modalbutton2);
+  projectModalButtons.appendChild(seeSourceLink);
   projectInformationModalContainer.appendChild(projectModalButtons);
 
   document.body.appendChild(projectInformationModalContainer);
