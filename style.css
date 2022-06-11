@@ -30,6 +30,7 @@ body {
   top: 10px;
   height: 15px;
   margin: 20px;
+  z-index: 1;
 }
 
 .headline {
@@ -88,6 +89,7 @@ body {
   background: #fff;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 #menu-close {
