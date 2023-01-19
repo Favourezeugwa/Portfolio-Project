@@ -13,7 +13,7 @@ This is my first portfolio project and it is responsive to all screensizes. Mobi
 
 ## Live Demo
 
-[click here for live demo](https://favourezeugwa.github.io/Portfolio-Project/)
+[click here for live demo](https://favour-portfolio-b6ea44.netlify.app/)
 
 ## Getting Started
 
