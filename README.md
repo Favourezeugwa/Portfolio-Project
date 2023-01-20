@@ -59,7 +59,7 @@ This is my first portfolio project and it is responsive to all screensizes. Mobi
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are most welcome!
 
 Feel free to check the [issues page](https://github.com/Favourezeugwa/First-Portfolio/issues)
 
