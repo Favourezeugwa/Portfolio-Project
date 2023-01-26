@@ -503,7 +503,7 @@ form button {
 }
 
 input {
-  width: 288px;
+  width: 100%;
   height: 52px;
   left: 16px;
   top: 4400px;
@@ -512,8 +512,6 @@ input {
   box-sizing: border-box;
   border-radius: 4px;
   margin-bottom: 8px;
-
-  /* font-size: 10px; */
   font-family: "Poppins", sans-serif;
   padding-left: 16px;
   padding-top: 4px;
@@ -521,7 +519,7 @@ input {
 }
 
 textarea {
-  width: 288px;
+  width: 100%;
   height: 112px;
   left: 16px;
   top: 4520px;
