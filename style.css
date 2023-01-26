@@ -112,8 +112,8 @@ body {
 
 .name {
   font-family: "Playfair Display", serif;
-  font-style: normal;
   font-size: 50px;
+  padding-top: 20px;
   line-height: 100%;
   font-weight: 400;
   color: #1a2236;
@@ -174,6 +174,10 @@ body {
 .project-container {
   display: flex;
   flex-direction: column;
+  /* margin: 25px 16px;
+  border: 1px solid #1a2236;
+  border-radius: 5px;
+  padding: 10px; */
 }
 
 .project-image {
@@ -382,17 +386,13 @@ body {
 
 .download-button {
   display: flex;
-  flex-direction: row;
   align-content: space-around;
   gap: 15px;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  line-height: 24px;
   color: #fff;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 75px;
+  padding: 13px 0px 13px 75px;
   background: #1a2236;
   margin-left: 16px;
   margin-right: 16px;
@@ -456,8 +456,10 @@ body {
 /* The contact form section starts */
 #contact-form-section {
   background: #f9f9fa;
-  padding-left: 18px;
-  padding-right: 14px;
+}
+
+.inner-contact {
+  padding: 0px 18px;
 }
 
 .contact {
@@ -470,6 +472,7 @@ body {
 .form-paragraph {
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  padding-top: 20px;
   font-size: 14px;
   font-weight: 200;
   line-height: 21px;
@@ -908,6 +911,17 @@ textarea {
     background-image: url("images/top-left.svg"), url("images/bottom-right.svg");
     background-position: top left, bottom right;
     background-repeat: no-repeat, no-repeat;
+  }
+
+  .inner-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .form-paragraph {
+    width: 800px;
   }
 
   .desktop-lorem {
