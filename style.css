@@ -14,6 +14,14 @@ body {
   margin: 0;
 }
 
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #1a2236;
+}
+
 #toolbar {
   /* display: flex; */
   justify-content: space-between;
@@ -22,6 +30,11 @@ body {
 .logoimage {
   width: 111px;
   height: 74px;
+}
+
+button {
+  width: 100%;
+  align-items: center;
 }
 
 #menuimage {
@@ -396,6 +409,7 @@ body {
   background: #1a2236;
   margin-left: 16px;
   margin-right: 16px;
+  width: auto;
 }
 
 .download-button > img {
